@@ -11,6 +11,7 @@ const defaultTheme = ({ selectedMode, selectedColor }) => {
     palette: {
       primary: { light: color.light, main: color.main },
       secondary: { main: mode.secondary },
+      tertiary: { main: mode.tertiary },
     },
   }
 }
