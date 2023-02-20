@@ -1,9 +1,10 @@
 import ThemeDrawer from "./common/ThemeDrawer"
+import Home from "./pages/Home"
 
 const App = () => {
   return (
     <div>
-      App
+      <Home />
       <ThemeDrawer />
     </div>
   )

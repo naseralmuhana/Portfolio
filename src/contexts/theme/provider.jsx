@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react"
+import CssBaseline from "@mui/material/CssBaseline"
 import { createTheme, ThemeProvider } from "@mui/material"
 import ThemeContext from "."
 import { Colors, Modes } from "../../assets/style/theme"
@@ -37,7 +38,10 @@ const ThemeContextProvider = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={contextValue}>
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        {children}
+      </ThemeProvider>
     </ThemeContext.Provider>
   )
 }

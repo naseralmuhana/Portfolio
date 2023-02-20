@@ -1,10 +1,12 @@
-import Button from "@mui/material/Button"
+import PageWrapper from "../../common/PageWrapper"
+import c from "../../constants"
+import About from "./components/About"
+
 const Home = () => {
   return (
-    <div>
-      Home
-      <Button variant="contained">Hello World</Button>
-    </div>
+    <PageWrapper title={c.homePageHelmetTitle}>
+      <About />
+    </PageWrapper>
   )
 }
 
