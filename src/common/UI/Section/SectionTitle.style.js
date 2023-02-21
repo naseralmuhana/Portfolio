@@ -1,7 +1,7 @@
 import { styled } from "@mui/system"
 
 // Section Title default Style
-export const SectionTitle = styled("h1")(({ theme }) => ({
+const SectionTitle = styled("h1")(({ theme }) => ({
   color: theme.palette.primary.main,
   fontFamily: theme.fonts.main,
   fontSize: "3.5rem",
@@ -25,3 +25,5 @@ export const SectionTitle = styled("h1")(({ theme }) => ({
     fontSize: "2rem",
   },
 }))
+
+export default SectionTitle

@@ -28,6 +28,9 @@ const defaultTheme = ({ selectedMode, selectedColor }) => {
     fonts: {
       main: "Poppins, sans-serif",
     },
+    typography: {
+      fontWeightSemiBold: 600,
+    },
     breakpoints: {
       values: {
         xs: 320,

@@ -1,53 +1,34 @@
-import { useMediaQuery } from "@mui/material"
-import { useTheme } from "@mui/material/styles"
+import SectionTitle from "../../../../common/UI/Section/SectionTitle.style"
 import c from "../../../../constants"
 import aboutData from "../../../../data/about.data"
-import { SectionTitle } from "../shared.style"
-// prettier-ignore
-import { 
-  Body, Description, DescriptionContainer, Image, ImageContainer, Section, Circle, Line, LineContainer 
-} from "./style"
+import AboutSvg from "../../../../assets/svg/AboutSvg"
+import Style from "./style"
 
 const About = () => {
-  const theme = useTheme()
-
-  const matchLg = useMediaQuery(theme.breakpoints.between("smd", "sxl"))
-  const matchSmd = useMediaQuery(theme.breakpoints.down("smd"))
-  const matchSm = useMediaQuery(theme.breakpoints.down("sm"))
+  console.log("About")
 
   return (
-    <Section id={c.aboutSectionId}>
-      {/* Top Line */}
-      <LineContainer>
-        <Circle />
-        <Circle />
-        <Line />
-      </LineContainer>
-      {/* Body */}
-      <Body>
-        {/* Description & Title Container */}
-        <DescriptionContainer>
-          {/* title */}
+    <Style.Section id={c.aboutSectionId}>
+      <Style.LineContainer>
+        <Style.Circle />
+        <Style.Circle />
+        <Style.Line />
+      </Style.LineContainer>
+      <Style.Body>
+        <Style.DescriptionContainer>
           <SectionTitle>{aboutData.title}</SectionTitle>
-          {/* Description */}
-          <Description>
+          <Style.Description>
             {aboutData.description1}
             <br />
             <br />
             {aboutData.description2}
-          </Description>
-        </DescriptionContainer>
-        {/* Image */}
-        <ImageContainer>
-          <Image
-            primary={theme.palette.primary.main}
-            deepPrimary={theme.palette.primary.dark}
-            secondary={theme.palette.tertiary.main}
-            width={matchLg ? "300" : matchSmd ? "250" : matchSm ? "200" : "380"}
-          />
-        </ImageContainer>
-      </Body>
-    </Section>
+          </Style.Description>
+        </Style.DescriptionContainer>
+        <Style.ImageContainer>
+          <AboutSvg />
+        </Style.ImageContainer>
+      </Style.Body>
+    </Style.Section>
   )
 }
 

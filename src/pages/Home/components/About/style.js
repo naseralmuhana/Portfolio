@@ -1,8 +1,7 @@
 import { styled } from "@mui/material/styles"
-import AboutMaleSvg from "../../../../assets/svg/AboutMaleSvg"
 
 // About Section
-export const Section = styled("section")({
+const Section = styled("section")({
   minHeight: "100vh",
   position: "relative",
 })
@@ -13,7 +12,7 @@ export const Section = styled("section")({
  */
 
 // Line Container
-export const LineContainer = styled("div")(({ theme }) => ({
+const LineContainer = styled("div")(({ theme }) => ({
   position: "absolute",
   top: "50px",
   left: "50%",
@@ -29,7 +28,7 @@ export const LineContainer = styled("div")(({ theme }) => ({
 }))
 
 // Circle
-export const Circle = styled("div")(({ theme }) => ({
+const Circle = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
   width: "10px",
   height: "10px",
@@ -45,7 +44,7 @@ export const Circle = styled("div")(({ theme }) => ({
 }))
 
 // Line
-export const Line = styled("div")(({ theme }) => ({
+const Line = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
   width: "95%",
   height: "5px",
@@ -66,7 +65,7 @@ export const Line = styled("div")(({ theme }) => ({
  */
 
 // Body
-export const Body = styled("div")(({ theme }) => ({
+const Body = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "space-around",
@@ -81,7 +80,7 @@ export const Body = styled("div")(({ theme }) => ({
 }))
 
 // Description Container
-export const DescriptionContainer = styled("div")(({ theme }) => ({
+const DescriptionContainer = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "flex-start",
@@ -97,7 +96,7 @@ export const DescriptionContainer = styled("div")(({ theme }) => ({
 }))
 
 // Description
-export const Description = styled("p")(({ theme }) => ({
+const Description = styled("p")(({ theme }) => ({
   color: theme.palette.tertiary.main80,
   fontSize: "1.25rem",
   [theme.breakpoints.between("md", "sxl")]: {
@@ -112,25 +111,18 @@ export const Description = styled("p")(({ theme }) => ({
 }))
 
 // Image Container
-export const ImageContainer = styled("div")({
+const ImageContainer = styled("div")({
   marginTop: "40px",
   pointerEvents: "none",
 })
 
-// Image
-export const Image = styled(AboutMaleSvg)(({ theme }) => ({
-  "& svg": {
-    width: "380px",
-
-    [theme.breakpoints.between("md", "sxl")]: {
-      width: "300px",
-    },
-    [theme.breakpoints.down("md")]: {
-      width: "250px",
-      flex: 0.4,
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: "200px",
-    },
-  },
-}))
+export default {
+  Body,
+  Description,
+  DescriptionContainer,
+  ImageContainer,
+  Section,
+  Circle,
+  Line,
+  LineContainer,
+}
