@@ -1,4 +1,5 @@
-import { styled } from "@mui/material"
+import { styled } from "@mui/material/styles"
+import c from "../../constants"
 
 const ExperienceBagSvg = () => {
   console.log("ExperienceBagSvg")
@@ -25,10 +26,10 @@ export default ExperienceBagSvg
 const Wrapper = styled("svg")(({ theme }) => ({
   width: "32px",
 
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.down(c.md)]: {
     width: "30px",
   },
-  [theme.breakpoints.down("smd")]: {
+  [theme.breakpoints.down(c.smd)]: {
     width: "28px",
   },
   "& path": {

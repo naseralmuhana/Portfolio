@@ -1,4 +1,5 @@
 import { styled } from "@mui/material/styles"
+import c from "../../../constants"
 
 /** Education + Experience Sections */
 
@@ -6,7 +7,7 @@ import { styled } from "@mui/material/styles"
 const Section = styled("section")(({ theme }) => ({
   minHeight: "100vh",
   overflow: "hidden",
-  [theme.breakpoints.down("lmd")]: {
+  [theme.breakpoints.down(c.lmd)]: {
     minHeight: "100%",
   },
 }))
@@ -29,10 +30,10 @@ const SectionDescriptionContainer = styled("div")(({ theme }) => ({
   width: "100%",
   padding: "2rem",
   marginLeft: "7%",
-  [theme.breakpoints.down("lg")]: {
+  [theme.breakpoints.down(c.lg)]: {
     flex: 0.6,
   },
-  [theme.breakpoints.down("lmd")]: {
+  [theme.breakpoints.down(c.lmd)]: {
     flex: 1,
     margin: "auto 0",
   },
@@ -44,10 +45,10 @@ const SectionImageContainer = styled("div")(({ theme }) => ({
   padding: "1rem",
   marginTop: "1rem",
   pointerEvents: "none",
-  [theme.breakpoints.down("lg")]: {
+  [theme.breakpoints.down(c.lg)]: {
     flex: 0.4,
   },
-  [theme.breakpoints.down("lmd")]: {
+  [theme.breakpoints.down(c.lmd)]: {
     display: "none",
   },
 }))

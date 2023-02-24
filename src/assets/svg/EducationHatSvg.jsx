@@ -1,4 +1,5 @@
-import { styled } from "@mui/material"
+import { styled } from "@mui/material/styles"
+import c from "../../constants"
 
 const EducationHatSvg = () => {
   console.log("EducationHatSvg")
@@ -26,10 +27,10 @@ export default EducationHatSvg
 const Wrapper = styled("svg")(({ theme }) => ({
   width: "40px",
 
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.down(c.md)]: {
     width: "35px",
   },
-  [theme.breakpoints.down("smd")]: {
+  [theme.breakpoints.down(c.smd)]: {
     width: "30px",
   },
   "& path": {

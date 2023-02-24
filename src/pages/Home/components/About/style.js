@@ -1,4 +1,5 @@
 import { styled } from "@mui/material/styles"
+import c from "../../../../constants"
 
 // About Section
 const Section = styled("section")({
@@ -22,7 +23,7 @@ const LineContainer = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
-  [theme.breakpoints.down("smd")]: {
+  [theme.breakpoints.down(c.smd)]: {
     top: "20px",
   },
 }))
@@ -33,11 +34,11 @@ const Circle = styled("div")(({ theme }) => ({
   width: "10px",
   height: "10px",
   borderRadius: "50%",
-  [theme.breakpoints.down("smd")]: {
+  [theme.breakpoints.down(c.smd)]: {
     width: "8px",
     height: "8px",
   },
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down(c.sm)]: {
     width: "6px",
     height: "6px",
   },
@@ -49,11 +50,11 @@ const Line = styled("div")(({ theme }) => ({
   width: "95%",
   height: "5px",
   borderRadius: "10px",
-  [theme.breakpoints.down("smd")]: {
+  [theme.breakpoints.down(c.smd)]: {
     width: "94%",
     height: "4px",
   },
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down(c.sm)]: {
     width: "93%",
     height: "3px",
   },
@@ -72,7 +73,7 @@ const Body = styled("div")(({ theme }) => ({
   flexDirection: "row",
   paddingTop: "7rem",
   height: "fit-content",
-  [theme.breakpoints.down("smd")]: {
+  [theme.breakpoints.down(c.smd)]: {
     paddingTop: "4rem",
     flexDirection: "column-reverse",
     justifyContent: "space-evenly",
@@ -88,7 +89,7 @@ const DescriptionContainer = styled("div")(({ theme }) => ({
   flex: 0.5,
   width: "100%",
   height: "fit-content",
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.down(c.md)]: {
     flex: 0.7,
     /* padding: '5% 10%', */
     padding: "20px",
@@ -99,13 +100,13 @@ const DescriptionContainer = styled("div")(({ theme }) => ({
 const Description = styled("p")(({ theme }) => ({
   color: theme.palette.tertiary.main80,
   fontSize: "1.25rem",
-  [theme.breakpoints.between("md", "sxl")]: {
+  [theme.breakpoints.between(c.md, c.sxl)]: {
     fontSize: "1.15rem",
   },
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.down(c.md)]: {
     fontSize: "1.1rem",
   },
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down(c.sm)]: {
     fontSize: "0.95rem",
   },
 }))

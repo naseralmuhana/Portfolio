@@ -1,4 +1,5 @@
 import { styled } from "@mui/material/styles"
+import c from "../../../constants"
 
 // Wrapper
 const Wrapper = styled("div")(({ theme }) => ({
@@ -20,10 +21,10 @@ const Wrapper = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.light,
   },
 
-  [theme.breakpoints.down("lmd")]: {
+  [theme.breakpoints.down(c.lmd)]: {
     width: "100%",
   },
-  [theme.breakpoints.down("smd")]: {
+  [theme.breakpoints.down(c.smd)]: {
     height: "130px",
     padding: "1rem",
   },
@@ -44,7 +45,7 @@ const ImageContainer = styled("div")(({ theme }) => ({
 
   backgroundColor: theme.palette.primary.dark,
 
-  [theme.breakpoints.down("smd")]: {
+  [theme.breakpoints.down(c.smd)]: {
     width: "45px",
     height: "45px",
   },
@@ -63,7 +64,7 @@ const Duration = styled("h6")(({ theme }) => ({
   fontSize: "0.85rem",
   fontWeight: theme.typography.fontWeightBold,
   marginBottom: "0.5rem",
-  [theme.breakpoints.down("smd")]: {
+  [theme.breakpoints.down(c.smd)]: {
     marginBottom: "0.45rem",
   },
 }))
@@ -73,11 +74,11 @@ const Title = styled("h4")(({ theme }) => ({
   color: theme.palette.tertiary.main,
   fontSize: "1.225rem",
   fontWeight: theme.typography.fontWeightBold,
-  [theme.breakpoints.down("smd")]: {
+  [theme.breakpoints.down(c.smd)]: {
     fontSize: "1.225rem",
     lineHeight: "126%",
   },
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down(c.sm)]: {
     fontSize: "1.025rem",
   },
 }))
@@ -88,11 +89,11 @@ const Content = styled("h5")(({ theme }) => ({
   fontSize: "1.15rem",
   fontWeight: theme.typography.fontWeightMedium,
 
-  [theme.breakpoints.down("smd")]: {
+  [theme.breakpoints.down(c.smd)]: {
     fontSize: "1.05rem",
     lineHeight: "126%",
   },
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down(c.sm)]: {
     fontSize: "0.95rem",
   },
 }))
