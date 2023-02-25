@@ -21,7 +21,6 @@ const ThemeContextProvider = ({ children }) => {
   const selectedMode = Modes.find((mode) => mode.label === modeLabel)
   // find the selected color from theme data color
   const selectedColor = useMemo(() => {
-    console.log("selectedColor")
     return modeLabel === c.darkLabel
       ? darkColors.find((color) => color.label === colorLabel)
       : lightColors.find((color) => color.label === colorLabel)

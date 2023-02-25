@@ -15,10 +15,14 @@ const Wrapper = styled("div")(({ theme }) => ({
   borderRadius: "20px",
 
   backgroundColor: theme.palette.primary.main,
-  transition: "background-color 200ms ease-in-out",
+  transition: "background-color 300ms ease-in-out",
 
   ":hover": {
     backgroundColor: theme.palette.primary.main50,
+    // cursor: "pointer",
+    "& path": {
+      stroke: theme.palette.primary.main50,
+    },
   },
 
   [theme.breakpoints.down(c.lmd)]: {
