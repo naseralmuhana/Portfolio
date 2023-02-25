@@ -1,4 +1,5 @@
 import { styled } from "@mui/material/styles"
+import { blue } from "../../../assets/style/theme/newColors/blue"
 import c from "../../../constants"
 
 // Wrapper
@@ -14,11 +15,11 @@ const Wrapper = styled("div")(({ theme }) => ({
   marginBottom: "1.5rem",
   borderRadius: "20px",
 
-  backgroundColor: theme.palette.primary.main,
+  backgroundColor: blue(theme.modeLabel).main,
   transition: "background-color 200ms ease-in-out",
 
   ":hover": {
-    backgroundColor: theme.palette.primary.light,
+    backgroundColor: blue(theme.modeLabel).main50,
   },
 
   [theme.breakpoints.down(c.lmd)]: {
@@ -43,7 +44,7 @@ const ImageContainer = styled("div")(({ theme }) => ({
   position: "relative",
   zIndex: 3,
 
-  backgroundColor: theme.palette.primary.dark,
+  backgroundColor: blue(theme.modeLabel).textDark,
 
   [theme.breakpoints.down(c.smd)]: {
     width: "45px",
@@ -60,7 +61,7 @@ const DescriptionContainer = styled("div")({
 
 //  Duration
 const Duration = styled("h6")(({ theme }) => ({
-  color: theme.palette.primary.dark,
+  color: blue(theme.modeLabel).textDark,
   fontSize: "0.85rem",
   fontWeight: theme.typography.fontWeightBold,
   marginBottom: "0.5rem",
@@ -71,7 +72,7 @@ const Duration = styled("h6")(({ theme }) => ({
 
 // Title
 const Title = styled("h4")(({ theme }) => ({
-  color: theme.palette.tertiary.main,
+  color: blue(theme.modeLabel).textDark,
   fontSize: "1.225rem",
   fontWeight: theme.typography.fontWeightBold,
   [theme.breakpoints.down(c.smd)]: {
@@ -85,7 +86,7 @@ const Title = styled("h4")(({ theme }) => ({
 
 // Content
 const Content = styled("h5")(({ theme }) => ({
-  color: theme.palette.tertiary.main80,
+  color: blue(theme.modeLabel).textDark50,
   fontSize: "1.15rem",
   fontWeight: theme.typography.fontWeightMedium,
 
