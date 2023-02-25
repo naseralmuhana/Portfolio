@@ -7,7 +7,7 @@ const light = {
   label: c.lightLabel,
   secondary: "#EAEAEA",
   secondary70: "#EAEAEAb3",
-  secondary50: "#EAEAEA80",
+  secondary50: "#EAEAEAe0",
   tertiary: "#212121",
   tertiary80: "#212121cc",
   tertiary70: "#212121b3",

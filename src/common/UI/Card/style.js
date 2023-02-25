@@ -18,7 +18,7 @@ const Wrapper = styled("div")(({ theme }) => ({
   transition: "background-color 200ms ease-in-out",
 
   ":hover": {
-    backgroundColor: theme.palette.primary.light,
+    backgroundColor: theme.palette.primary.main50,
   },
 
   [theme.breakpoints.down(c.lmd)]: {
@@ -43,7 +43,7 @@ const ImageContainer = styled("div")(({ theme }) => ({
   position: "relative",
   zIndex: 3,
 
-  backgroundColor: theme.palette.primary.dark,
+  backgroundColor: theme.palette.secondary.main,
 
   [theme.breakpoints.down(c.smd)]: {
     width: "45px",
@@ -60,7 +60,7 @@ const DescriptionContainer = styled("div")({
 
 //  Duration
 const Duration = styled("h6")(({ theme }) => ({
-  color: theme.palette.primary.dark,
+  color: theme.palette.secondary.main,
   fontSize: "0.85rem",
   fontWeight: theme.typography.fontWeightBold,
   marginBottom: "0.5rem",
@@ -71,7 +71,7 @@ const Duration = styled("h6")(({ theme }) => ({
 
 // Title
 const Title = styled("h4")(({ theme }) => ({
-  color: theme.palette.tertiary.main,
+  color: theme.palette.secondary.main,
   fontSize: "1.225rem",
   fontWeight: theme.typography.fontWeightBold,
   [theme.breakpoints.down(c.smd)]: {
@@ -85,7 +85,7 @@ const Title = styled("h4")(({ theme }) => ({
 
 // Content
 const Content = styled("h5")(({ theme }) => ({
-  color: theme.palette.tertiary.main80,
+  color: theme.palette.secondary.main50,
   fontSize: "1.15rem",
   fontWeight: theme.typography.fontWeightMedium,
 

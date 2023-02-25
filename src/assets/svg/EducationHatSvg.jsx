@@ -34,6 +34,6 @@ const Wrapper = styled("svg")(({ theme }) => ({
     width: "30px",
   },
   "& path": {
-    stroke: theme.palette.tertiary.main,
+    stroke: theme.palette.primary.main,
   },
 }))

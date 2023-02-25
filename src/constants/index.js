@@ -1,12 +1,12 @@
 import ids from "./ids.constants"
-import labels from "./labels.constants"
 import others from "./others.constants"
-import breakpoints from "./breakpoints.constants"
+import breakpoints from "./theme/breakpoints.constants"
+import palette from "./theme/palette.constants"
 
 const c = {
-  ...labels,
   ...ids,
   ...breakpoints,
+  ...palette,
   ...others,
 }
 

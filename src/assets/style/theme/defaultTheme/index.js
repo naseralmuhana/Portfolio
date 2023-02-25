@@ -14,15 +14,30 @@ import "@fontsource/poppins/900.css"
 // using the context api to fill it with the chosen theme mode and color
 const defaultTheme = ({ selectedMode, selectedColor }) => {
   const { label: modeLabel, ...mode } = selectedMode
-  const { label: colorLabel, ...color } = selectedColor
+  const {
+    label: colorLabel,
+    lightest,
+    light,
+    main,
+    main50,
+    dark,
+    darkest,
+  } = selectedColor
 
   return {
     components, // css base
     modeLabel,
     colorLabel,
     palette: {
-      primary: { light: color.light, main: color.main },
-      secondary: { main: mode.secondary },
+      primary: {
+        lightest,
+        light,
+        main,
+        main50,
+        dark,
+        darkest,
+      },
+      secondary: { main: mode.secondary, main50: mode.secondary50 },
       tertiary: { main: mode.tertiary, main80: mode.tertiary80 },
     },
     fonts: {

@@ -12,30 +12,10 @@ import SettingsIcon from "@mui/icons-material/Settings"
 import IconButton from "@mui/material/IconButton"
 import Switch from "@mui/material/Switch"
 import { styled, useTheme } from "@mui/material/styles"
-
-import c from "../../constants"
-import blue from "../../assets/style/theme/colors/blue"
-import deepPurple from "../../assets/style/theme/colors/deepPurple"
-import green from "../../assets/style/theme/colors/green"
-import orange from "../../assets/style/theme/colors/orange"
-import pink from "../../assets/style/theme/colors/pink"
-import purple from "../../assets/style/theme/colors/purple"
-import red from "../../assets/style/theme/colors/red"
-import teal from "../../assets/style/theme/colors/teal"
-import yellow from "../../assets/style/theme/colors/yellow"
 import useThemeContext from "../../contexts/theme/useThemeContext"
+import c from "../../constants"
 
-const colors = [
-  { label: c.blueLabel, bg: blue.main },
-  { label: c.deepPurpleLabel, bg: deepPurple.main },
-  { label: c.greenLabel, bg: green.main },
-  { label: c.orangeLabel, bg: orange.main },
-  { label: c.pinkLabel, bg: pink.main },
-  { label: c.purpleLabel, bg: purple.main },
-  { label: c.redLabel, bg: red.main },
-  { label: c.tealLabel, bg: teal.main },
-  { label: c.yellowLabel, bg: yellow.main },
-]
+const colors = [{ label: c.blue }, { label: c.green }, { label: c.red }]
 
 const ThemeDrawer = () => {
   const theme = useTheme()
@@ -47,14 +27,14 @@ const ThemeDrawer = () => {
   const list = () => (
     <Box sx={{ width: 250 }} role="presentation">
       <List>
-        {colors.map(({ label, bg }) => (
+        {colors.map(({ label }) => (
           <ListItem
             key={label}
             disablePadding
             onClick={() => changeColor(label)}
           >
             <ListItemButton>
-              <ListItemIcon>
+              {/* <ListItemIcon>
                 <Box
                   sx={{
                     borderRadius: "50%",
@@ -63,7 +43,7 @@ const ThemeDrawer = () => {
                     bgcolor: bg,
                   }}
                 />
-              </ListItemIcon>
+              </ListItemIcon> */}
               <ListItemText primary={label} />
             </ListItemButton>
           </ListItem>

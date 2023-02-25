@@ -2,9 +2,10 @@ import { useMemo, useState } from "react"
 import CssBaseline from "@mui/material/CssBaseline"
 import { createTheme, ThemeProvider } from "@mui/material"
 import ThemeContext from "."
-import { Colors, Modes } from "../../assets/style/theme"
+import { darkColors, lightColors, Modes } from "../../assets/style/theme"
 import defaultTheme from "../../assets/style/theme/defaultTheme"
 import { toggleModeHelper, retrieveThemeFromLS, saveThemeToLS } from "./helper"
+import c from "../../constants"
 
 // Create theme context provider
 const ThemeContextProvider = ({ children }) => {
@@ -19,7 +20,12 @@ const ThemeContextProvider = ({ children }) => {
   // find the selected mode from theme data mode
   const selectedMode = Modes.find((mode) => mode.label === modeLabel)
   // find the selected color from theme data color
-  const selectedColor = Colors.find((color) => color.label === colorLabel)
+  const selectedColor = useMemo(() => {
+    console.log("selectedColor")
+    return modeLabel === c.darkLabel
+      ? darkColors.find((color) => color.label === colorLabel)
+      : lightColors.find((color) => color.label === colorLabel)
+  }, [colorLabel, modeLabel])
 
   // context value to be able to use it in the app (use context)
   const contextValue = {

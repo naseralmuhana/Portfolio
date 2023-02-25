@@ -7,7 +7,7 @@ const dark = {
   label: c.darkLabel,
   secondary: "#212121",
   secondary70: "#212121b3",
-  secondary50: "#21212180",
+  secondary50: "#212121e2",
   tertiary: "#eaeaea",
   tertiary80: "#eaeaeacc",
   tertiary70: "#eaeaeab3",

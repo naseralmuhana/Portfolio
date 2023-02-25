@@ -21,7 +21,7 @@ export const retrieveThemeFromLS = () => {
   // return blue as default
   const colorLabel = localStorage.getItem(c.colorLabel)
     ? JSON.parse(localStorage.getItem(c.colorLabel))
-    : c.blueLabel
+    : c.blue
 
   return { modeLabel, colorLabel }
 }
