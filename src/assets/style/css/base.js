@@ -41,9 +41,6 @@ const components = {
             background-color: ${theme.palette.secondary.main};
             color: ${theme.palette.tertiary.main};
             font-family: ${theme.fonts.main};
-            transition: background-color 300ms ease-in-out, 
-                        color 300ms ease-in-out;
-          
         }
 
         // Scrollbar

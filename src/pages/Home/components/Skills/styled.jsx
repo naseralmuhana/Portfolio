@@ -50,16 +50,18 @@ const Scroll = styled("div")(({ theme }) => ({
   },
 }))
 
-const CustomMarquee = styled(Marquee)(({ theme }) => ({
-  padding: "1.5rem 0",
+const CustomMarquee = styled(({ ...props }) => (
+  <Marquee {...props} gradient={false} speed={50} pauseOnHover />
+))(({ theme }) => ({
+  padding: "0rem 0",
   overflowY: "hidden",
 
   ":has(.skill-card:hover)": {
     ".skill-card:not(:hover)": {
-      boxShadow: `0px 0px 26px ${theme.palette.primary.light}`,
+      boxShadow: `0px 0px 20px ${theme.palette.primary.light}`,
     },
     ".skill-card:hover": {
-      transform: "scale(1.15)",
+      transform: "scale(1.05)",
     },
   },
 }))

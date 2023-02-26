@@ -1,9 +1,10 @@
+import { default as MuiTooltip, tooltipClasses } from "@mui/material/Tooltip"
 import { styled } from "@mui/material/styles"
 import c from "../../../../../constants"
 
 const Wrapper = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.secondary.main,
-  boxShadow: `0px 0px 30px ${theme.palette.primary.light}`,
+  boxShadow: `0px 0px 20px ${theme.palette.primary.light}`,
 
   display: "flex",
   flexDirection: "column",
@@ -17,10 +18,6 @@ const Wrapper = styled("div")(({ theme }) => ({
   margin: "1.5rem",
   borderRadius: "10px",
   transition: "all 300ms ease-in-out",
-
-  // "&:hover": {
-  //   transform: "scale(1.15)",
-  // },
 
   [theme.breakpoints.down(c.lmd)]: {
     width: "150px",
@@ -62,4 +59,20 @@ const Title = styled("h3")(({ theme }) => ({
   },
 }))
 
-export default { Wrapper, Image, Title }
+const Tooltip = styled(({ className, ...props }) => (
+  <MuiTooltip
+    {...props}
+    classes={{ popper: className }}
+    enterTouchDelay={0}
+    leaveTouchDelay={100000}
+    arrow
+    followCursor
+    placement="top"
+  />
+))(({ theme }) => ({
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: theme.palette.tertiary.main50,
+    color: theme.palette.primary.main,
+  },
+}))
+export default { Wrapper, Image, Title, Tooltip }
