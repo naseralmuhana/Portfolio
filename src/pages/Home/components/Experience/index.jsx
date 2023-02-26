@@ -3,7 +3,7 @@ import Shared from "../../../../common/UI/Section/shared.style"
 import SectionTitle from "../../../../common/UI/Section/SectionTitle.style"
 import ExperienceSvg from "../../../../assets/svg/ExperienceSvg"
 import Card from "../../../../common/UI/Card"
-import experienceData from "../../../../data/experienceData"
+import experienceData from "../../../../data/experience.data"
 import ExperienceBagSvg from "../../../../assets/svg/ExperienceBagSvg"
 
 const Experience = () => {

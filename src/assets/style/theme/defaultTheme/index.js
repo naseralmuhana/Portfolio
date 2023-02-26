@@ -9,6 +9,7 @@ import "@fontsource/poppins/600.css"
 import "@fontsource/poppins/700.css"
 import "@fontsource/poppins/800.css"
 import "@fontsource/poppins/900.css"
+import "@fontsource/big-shoulders-text/500.css"
 
 // the default theme that will be used in the app and styled components
 // using the context api to fill it with the chosen theme mode and color
@@ -42,13 +43,19 @@ const defaultTheme = ({ selectedMode, selectedColor }) => {
     },
     fonts: {
       main: "Poppins, sans-serif",
+      secondary: {
+        s1: "Big Shoulders Text",
+      },
     },
     typography: {
+      fontWeightMedium: 500,
       fontWeightSemiBold: 600,
+      fontWeightBold: 700,
     },
     breakpoints: {
       values: {
         xs: 320,
+        xsm: 450,
         sm: 600,
         smd: 800,
         md: 900,
