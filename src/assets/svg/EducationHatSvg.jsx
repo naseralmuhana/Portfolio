@@ -27,10 +27,10 @@ export default EducationHatSvg
 const Wrapper = styled("svg")(({ theme }) => ({
   width: "40px",
 
-  [theme.breakpoints.down(c.md)]: {
+  [theme.breakpoints.down(c.b900)]: {
     width: "35px",
   },
-  [theme.breakpoints.down(c.smd)]: {
+  [theme.breakpoints.down(c.b800)]: {
     width: "30px",
   },
   "& path": {

@@ -7,7 +7,7 @@ import c from "../../../constants"
 const Section = styled("section")(({ theme }) => ({
   minHeight: "100vh",
   overflow: "hidden",
-  [theme.breakpoints.down(c.lmd)]: {
+  [theme.breakpoints.down(c.b1000)]: {
     minHeight: "100%",
   },
 }))
@@ -30,10 +30,10 @@ const SectionDescriptionContainer = styled("div")(({ theme }) => ({
   width: "100%",
   padding: "2rem",
   marginLeft: "7%",
-  [theme.breakpoints.down(c.lg)]: {
+  [theme.breakpoints.down(c.b1200)]: {
     flex: 0.6,
   },
-  [theme.breakpoints.down(c.lmd)]: {
+  [theme.breakpoints.down(c.b1000)]: {
     flex: 1,
     margin: "auto 0",
   },
@@ -45,10 +45,10 @@ const SectionImageContainer = styled("div")(({ theme }) => ({
   padding: "1rem",
   marginTop: "1rem",
   pointerEvents: "none",
-  [theme.breakpoints.down(c.lg)]: {
+  [theme.breakpoints.down(c.b1200)]: {
     flex: 0.4,
   },
-  [theme.breakpoints.down(c.lmd)]: {
+  [theme.breakpoints.down(c.b1000)]: {
     display: "none",
   },
 }))

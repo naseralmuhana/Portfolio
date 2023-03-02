@@ -1,4 +1,4 @@
-import Style from "./SkillCard.styled"
+import Style from "./SkillCard.style"
 import skillsImage from "../../../../../utils/skillsImage"
 import ProgressBar from "./ProgressBar"
 

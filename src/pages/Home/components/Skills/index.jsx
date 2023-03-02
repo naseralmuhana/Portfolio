@@ -1,4 +1,4 @@
-import Style from "./styled"
+import Style from "./style"
 import c from "../../../../constants"
 import skillsData from "../../../../data/skills.data"
 import SkillCard from "./components/SkillCard"

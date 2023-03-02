@@ -25,10 +25,10 @@ const Wrapper = styled("div")(({ theme }) => ({
     },
   },
 
-  [theme.breakpoints.down(c.lmd)]: {
+  [theme.breakpoints.down(c.b1000)]: {
     width: "100%",
   },
-  [theme.breakpoints.down(c.smd)]: {
+  [theme.breakpoints.down(c.b800)]: {
     height: "130px",
     padding: "1rem",
   },
@@ -49,7 +49,7 @@ const ImageContainer = styled("div")(({ theme }) => ({
 
   backgroundColor: theme.palette.secondary.main,
 
-  [theme.breakpoints.down(c.smd)]: {
+  [theme.breakpoints.down(c.b800)]: {
     width: "45px",
     height: "45px",
   },
@@ -68,7 +68,7 @@ const Duration = styled("h6")(({ theme }) => ({
   fontSize: "0.85rem",
   fontWeight: theme.typography.fontWeightBold,
   marginBottom: "0.5rem",
-  [theme.breakpoints.down(c.smd)]: {
+  [theme.breakpoints.down(c.b800)]: {
     marginBottom: "0.45rem",
   },
 }))
@@ -78,11 +78,11 @@ const Title = styled("h4")(({ theme }) => ({
   color: theme.palette.secondary.main,
   fontSize: "1.225rem",
   fontWeight: theme.typography.fontWeightBold,
-  [theme.breakpoints.down(c.smd)]: {
+  [theme.breakpoints.down(c.b800)]: {
     fontSize: "1.225rem",
     lineHeight: "126%",
   },
-  [theme.breakpoints.down(c.sm)]: {
+  [theme.breakpoints.down(c.b600)]: {
     fontSize: "1.025rem",
   },
 }))
@@ -93,11 +93,11 @@ const Content = styled("h5")(({ theme }) => ({
   fontSize: "1.15rem",
   fontWeight: theme.typography.fontWeightMedium,
 
-  [theme.breakpoints.down(c.smd)]: {
+  [theme.breakpoints.down(c.b800)]: {
     fontSize: "1.05rem",
     lineHeight: "126%",
   },
-  [theme.breakpoints.down(c.sm)]: {
+  [theme.breakpoints.down(c.b600)]: {
     fontSize: "0.95rem",
   },
 }))

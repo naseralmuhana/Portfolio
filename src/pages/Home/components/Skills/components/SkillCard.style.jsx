@@ -19,12 +19,12 @@ const Wrapper = styled("div")(({ theme }) => ({
   borderRadius: "10px",
   transition: "all 300ms ease-in-out",
 
-  [theme.breakpoints.down(c.lmd)]: {
+  [theme.breakpoints.down(c.b1000)]: {
     width: "150px",
     height: "150px",
     margin: "1.2rem",
   },
-  [theme.breakpoints.down(c.sm)]: {
+  [theme.breakpoints.down(c.b600)]: {
     width: "135px",
     height: "135px",
   },
@@ -33,10 +33,10 @@ const Wrapper = styled("div")(({ theme }) => ({
 const Image = styled("img")(({ theme }) => ({
   height: "50px",
   pointerEvents: "none",
-  [theme.breakpoints.down(c.lmd)]: {
+  [theme.breakpoints.down(c.b1000)]: {
     height: "45px",
   },
-  [theme.breakpoints.down(c.smd)]: {
+  [theme.breakpoints.down(c.b800)]: {
     height: "40px",
   },
 }))
@@ -48,13 +48,13 @@ const Title = styled("h3")(({ theme }) => ({
   fontSize: "1.375rem",
   marginTop: "1rem",
   textAlign: "center",
-  [theme.breakpoints.down(c.lmd)]: {
+  [theme.breakpoints.down(c.b1000)]: {
     fontSize: "1.25rem",
   },
-  [theme.breakpoints.down(c.smd)]: {
+  [theme.breakpoints.down(c.b800)]: {
     fontSize: "1.125rem",
   },
-  [theme.breakpoints.down(c.xsm)]: {
+  [theme.breakpoints.down(c.b320m)]: {
     fontSize: "1rem",
   },
 }))

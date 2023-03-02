@@ -9,14 +9,14 @@ const Section = styled("section")(({ theme }) => ({
   justifyContent: "flex-start",
   padding: "2.5rem 2rem 2rem",
   minHeight: "60vh",
-  [theme.breakpoints.down(c.sxl)]: {
+  [theme.breakpoints.down(c.b1380)]: {
     padding: "2rem 1rem 1rem",
   },
-  [theme.breakpoints.down(c.lmd)]: {
+  [theme.breakpoints.down(c.b1000)]: {
     padding: "1rem",
     minHeight: "100%",
   },
-  [theme.breakpoints.down(c.smd)]: {
+  [theme.breakpoints.down(c.b800)]: {
     padding: "0.5rem",
   },
 }))
@@ -28,15 +28,15 @@ const Body = styled("div")(({ theme }) => ({
   padding: "0 2rem",
   marginTop: "3.5rem",
   width: "100%",
-  [theme.breakpoints.down(c.sxl)]: {
+  [theme.breakpoints.down(c.b1380)]: {
     padding: "1.5rem",
     marginTop: "1.5rem",
   },
-  [theme.breakpoints.down(c.lmd)]: {
+  [theme.breakpoints.down(c.b1000)]: {
     padding: "1rem",
     marginTop: "1rem 0",
   },
-  [theme.breakpoints.down(c.smd)]: {
+  [theme.breakpoints.down(c.b800)]: {
     padding: "0.5rem",
   },
 }))
@@ -45,7 +45,7 @@ const Scroll = styled("div")(({ theme }) => ({
   width: "100%",
   margin: "0 2rem",
   padding: "1.5rem 0",
-  [theme.breakpoints.down(c.smd)]: {
+  [theme.breakpoints.down(c.b800)]: {
     margin: 0,
   },
 }))

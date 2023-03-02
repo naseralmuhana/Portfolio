@@ -23,7 +23,7 @@ const LineContainer = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
-  [theme.breakpoints.down(c.smd)]: {
+  [theme.breakpoints.down(c.b800)]: {
     top: "20px",
   },
 }))
@@ -34,11 +34,11 @@ const Circle = styled("div")(({ theme }) => ({
   width: "10px",
   height: "10px",
   borderRadius: "50%",
-  [theme.breakpoints.down(c.smd)]: {
+  [theme.breakpoints.down(c.b800)]: {
     width: "8px",
     height: "8px",
   },
-  [theme.breakpoints.down(c.sm)]: {
+  [theme.breakpoints.down(c.b600)]: {
     width: "6px",
     height: "6px",
   },
@@ -50,11 +50,11 @@ const Line = styled("div")(({ theme }) => ({
   width: "95%",
   height: "5px",
   borderRadius: "10px",
-  [theme.breakpoints.down(c.smd)]: {
+  [theme.breakpoints.down(c.b800)]: {
     width: "94%",
     height: "4px",
   },
-  [theme.breakpoints.down(c.sm)]: {
+  [theme.breakpoints.down(c.b600)]: {
     width: "93%",
     height: "3px",
   },
@@ -73,7 +73,7 @@ const Body = styled("div")(({ theme }) => ({
   flexDirection: "row",
   paddingTop: "7rem",
   height: "fit-content",
-  [theme.breakpoints.down(c.smd)]: {
+  [theme.breakpoints.down(c.b800)]: {
     paddingTop: "4rem",
     flexDirection: "column-reverse",
     justifyContent: "space-evenly",
@@ -89,7 +89,7 @@ const DescriptionContainer = styled("div")(({ theme }) => ({
   flex: 0.5,
   width: "100%",
   height: "fit-content",
-  [theme.breakpoints.down(c.md)]: {
+  [theme.breakpoints.down(c.b900)]: {
     flex: 0.7,
     /* padding: '5% 10%', */
     padding: "20px",
@@ -100,13 +100,13 @@ const DescriptionContainer = styled("div")(({ theme }) => ({
 const Description = styled("p")(({ theme }) => ({
   color: theme.palette.tertiary.main80,
   fontSize: "1.25rem",
-  [theme.breakpoints.between(c.md, c.sxl)]: {
+  [theme.breakpoints.between(c.b900, c.b1380)]: {
     fontSize: "1.15rem",
   },
-  [theme.breakpoints.down(c.md)]: {
+  [theme.breakpoints.down(c.b900)]: {
     fontSize: "1.1rem",
   },
-  [theme.breakpoints.down(c.sm)]: {
+  [theme.breakpoints.down(c.b600)]: {
     fontSize: "0.95rem",
   },
 }))

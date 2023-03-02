@@ -26,10 +26,10 @@ export default ExperienceBagSvg
 const Wrapper = styled("svg")(({ theme }) => ({
   width: "32px",
 
-  [theme.breakpoints.down(c.md)]: {
+  [theme.breakpoints.down(c.b900)]: {
     width: "30px",
   },
-  [theme.breakpoints.down(c.smd)]: {
+  [theme.breakpoints.down(c.b800)]: {
     width: "28px",
   },
   "& path": {

@@ -1,5 +1,5 @@
 import useProgressWidth from "../hooks/useProgressWidth"
-import Style from "./ProgressBar.styled"
+import Style from "./ProgressBar.style"
 
 const ProgressBar = ({ progress }) => {
   const width = useProgressWidth(progress)
