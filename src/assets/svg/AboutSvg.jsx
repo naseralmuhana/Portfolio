@@ -1,8 +1,6 @@
 import { SvgWrapper } from "./svg.style"
 
 const AboutMaleSvg = () => {
-  console.log("AboutMaleSvg")
-
   return (
     <SvgWrapper
       width="100%"

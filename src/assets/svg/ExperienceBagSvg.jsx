@@ -2,7 +2,6 @@ import { styled } from "@mui/material/styles"
 import c from "../../constants"
 
 const ExperienceBagSvg = () => {
-  console.log("ExperienceBagSvg")
   return (
     <Wrapper
       width="43"

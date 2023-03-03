@@ -1,8 +1,6 @@
 import { SvgWrapper } from "./svg.style"
 
 const EducationSvg = () => {
-  console.log("EducationSvg")
-
   return (
     <SvgWrapper
       width="100%"

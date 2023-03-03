@@ -2,8 +2,6 @@ import { styled } from "@mui/material/styles"
 import c from "../../constants"
 
 const EducationHatSvg = () => {
-  console.log("EducationHatSvg")
-
   return (
     <Wrapper
       width="51"

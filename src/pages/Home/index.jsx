@@ -8,7 +8,6 @@ import Experience from "./components/Experience"
 import Skills from "./components/Skills"
 
 const Home = () => {
-  console.log("Home")
   return (
     <PageWrapper title={c.homePageHelmetTitle}>
       <Header />

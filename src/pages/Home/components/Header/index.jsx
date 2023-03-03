@@ -1,5 +1,6 @@
 import useScrollTrigger from "@mui/material/useScrollTrigger"
 import LogoAnimation from "./components/Logo"
+import Menu from "./components/Menu"
 import Style from "./style"
 
 const Header = () => {
@@ -7,7 +8,7 @@ const Header = () => {
   return (
     <Style.Wrapper trigger={trigger}>
       <LogoAnimation trigger={trigger} />
-      <div>Menu</div>
+      <Menu />
     </Style.Wrapper>
   )
 }

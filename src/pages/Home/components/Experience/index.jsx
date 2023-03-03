@@ -7,7 +7,6 @@ import experienceData from "../../../../data/experience.data"
 import ExperienceBagSvg from "../../../../assets/svg/ExperienceBagSvg"
 
 const Experience = () => {
-  console.log("Experience")
   const cards = experienceData.map((exp) => (
     <Card
       key={exp.id}

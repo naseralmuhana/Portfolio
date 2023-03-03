@@ -5,8 +5,6 @@ import AboutSvg from "../../../../assets/svg/AboutSvg"
 import Style from "./style"
 
 const About = () => {
-  console.log("About")
-
   return (
     <Style.Section id={c.aboutSectionId}>
       <Style.LineContainer>

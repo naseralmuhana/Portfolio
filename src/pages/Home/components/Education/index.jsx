@@ -7,7 +7,6 @@ import educationData from "../../../../data/education.data"
 import EducationHatSvg from "../../../../assets/svg/EducationHatSvg"
 
 const Education = () => {
-  console.log("Education")
   const cards = educationData.map((edu) => (
     <Card
       key={edu.id}

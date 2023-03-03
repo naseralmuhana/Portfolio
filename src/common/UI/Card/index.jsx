@@ -1,7 +1,6 @@
 import Style from "./style"
 
 const Card = ({ title, content, startYear, endYear, avatarSvg }) => {
-  console.log("Card")
   return (
     <Style.Wrapper>
       <Style.ImageContainer>{avatarSvg}</Style.ImageContainer>
