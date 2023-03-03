@@ -23,9 +23,7 @@ const Wrapper = styled(motion.svg)(({ theme, trigger }) => ({
   },
   [theme.breakpoints.down(c.b600)]: {
     "path[stroke]": {
-      stroke: trigger
-        ? theme.palette.primary.main
-        : theme.palette.secondary.main,
+      stroke: theme.palette.primary.main,
     },
   },
 }))
