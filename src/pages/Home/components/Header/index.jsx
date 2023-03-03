@@ -6,7 +6,7 @@ const Header = () => {
   const trigger = useScrollTrigger({ disableHysteresis: true })
   return (
     <Style.Wrapper trigger={trigger}>
-      <LogoAnimation />
+      <LogoAnimation trigger={trigger} />
       <div>Menu</div>
     </Style.Wrapper>
   )

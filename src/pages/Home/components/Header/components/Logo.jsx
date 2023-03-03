@@ -1,9 +1,6 @@
-import { motion, useAnimation } from "framer-motion"
-import useScrollTrigger from "@mui/material/useScrollTrigger"
+import { motion } from "framer-motion"
 import Style from "./Logo.style"
 import logoData from "../../../../../data/logo.data"
-import { useTheme } from "@mui/material/styles"
-import { useEffect } from "react"
 
 const svgVariants = {
   hidden: {},
@@ -23,9 +20,7 @@ const pathVariants = {
   },
 }
 
-const Logo = () => {
-  const trigger = useScrollTrigger({ disableHysteresis: true })
-
+const Logo = ({ trigger }) => {
   return (
     <Style.Wrapper
       trigger={trigger}
