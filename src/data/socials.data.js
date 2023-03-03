@@ -1,7 +1,7 @@
 // prettier-ignore
 import { FaLinkedin, FaBlogger,FaTwitter, FaLinkedinIn, FaGithub, FaYoutube, FaBloggerB, FaRedditAlien, FaStackOverflow, FaCodepen, FaInstagram, FaGitlab, FaMediumM, FaFacebookF } from "react-icons/fa"
 
-export const socialsHeaderData = [
+export const socialsLandingData = [
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in",

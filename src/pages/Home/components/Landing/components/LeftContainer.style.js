@@ -18,7 +18,7 @@ const Wrapper = styled("div")(({ theme }) => ({
   [theme.breakpoints.down(c.b600)]: {
     flex: "initial",
     width: "100%",
-    height: "30%",
+    height: "0%",
   },
 }))
 

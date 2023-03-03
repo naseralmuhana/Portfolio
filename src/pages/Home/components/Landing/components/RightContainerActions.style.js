@@ -17,12 +17,11 @@ const Wrapper = styled("div")(({ theme }) => ({
     alignItems: "flex-start",
   },
   [theme.breakpoints.down(c.b600)]: {
-    margin: "0 auto",
+    margin: "1rem auto 0rem",
+
     alignItems: "center",
     justifyContent: "center",
-    "&  button": {
-      marginTop: "-20%",
-    },
+    gap: "1rem",
   },
 }))
 const ResumeBtn = styled(Button)(({ theme }) => ({
@@ -65,7 +64,8 @@ const ContactBtn = styled(Button)(({ theme }) => ({
     border: `3px solid ${theme.palette.tertiary.main}`,
   },
   [theme.breakpoints.down(c.b600)]: {
-    display: "none",
+    // display: "none",
+    width: "180px",
   },
 }))
 

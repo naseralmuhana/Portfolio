@@ -1,9 +1,9 @@
-import headerData from "../../../../../data/header.data"
+import landingData from "../../../../../data/landing.data"
 import Style from "./RightContainer.style"
 import RightContainerActions from "./RightContainerActions"
 
 const RightContainer = () => {
-  const { title, name, description, resumePdf } = headerData
+  const { title, name, description, resumePdf } = landingData
   return (
     <Style.Wrapper>
       <Style.Body>

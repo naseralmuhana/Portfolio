@@ -17,7 +17,7 @@ const Wrapper = styled("div")(({ theme }) => ({
   [theme.breakpoints.down(c.b600)]: {
     flex: "initial",
     width: "100%",
-    height: "70%",
+    height: "80%",
     alignItems: "center",
     padding: "0 2rem",
   },
@@ -41,7 +41,7 @@ const Body = styled("div")(({ theme }) => ({
     marginTop: "35%",
   },
   [theme.breakpoints.down(c.b400)]: {
-    marginTop: "55%",
+    marginTop: "45%",
   },
 }))
 

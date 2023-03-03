@@ -2,13 +2,13 @@ import c from "../../../../constants"
 import Style from "./style"
 import LeftContainer from "./components/LeftContainer"
 import RightContainer from "./components/RightContainer"
-import headerData from "../../../../data/header.data"
+import landingData from "../../../../data/landing.data"
 
 const Landing = () => {
   return (
     <Style.Section id={c.landingSectionId}>
       <LeftContainer />
-      <Style.Blob src={headerData.image} />
+      <Style.Blob src={landingData.image} />
       <RightContainer />
     </Style.Section>
   )

@@ -1,7 +1,7 @@
 import resume from "../assets/pdf/resume.pdf"
 import profileNoBackground from "../assets/png/profile-nobackground.png"
 
-const headerData = {
+const landingData = {
   name: "Naser AlMuhana",
   title: "Web/Mobile Developer",
   description:
@@ -12,4 +12,4 @@ const headerData = {
   resumePdf: resume,
 }
 
-export default headerData
+export default landingData
