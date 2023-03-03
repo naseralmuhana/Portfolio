@@ -6,13 +6,11 @@ import About from "./components/About"
 import Education from "./components/Education"
 import Experience from "./components/Experience"
 import Skills from "./components/Skills"
-// import Test from "./test"
 
 const Home = () => {
   console.log("Home")
   return (
     <PageWrapper title={c.homePageHelmetTitle}>
-      {/* <Test /> */}
       <Header />
       <Landing />
       <About />

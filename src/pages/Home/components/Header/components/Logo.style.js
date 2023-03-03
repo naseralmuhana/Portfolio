@@ -7,7 +7,7 @@ const Wrapper = styled(motion.svg)(({ theme, trigger }) => ({
   height: "31px",
   transition: "width 100ms ease-in-out, height 100ms ease-is-out",
   "path[stroke]": {
-    stroke: theme.palette.secondary.main,
+    stroke: trigger ? theme.palette.primary.main : theme.palette.secondary.main,
   },
   [theme.breakpoints.down(c.b1000)]: {
     width: "235px",
@@ -24,8 +24,8 @@ const Wrapper = styled(motion.svg)(({ theme, trigger }) => ({
   [theme.breakpoints.down(c.b600)]: {
     "path[stroke]": {
       stroke: trigger
-        ? theme.palette.secondary.main
-        : theme.palette.primary.main,
+        ? theme.palette.primary.main
+        : theme.palette.secondary.main,
     },
   },
 }))
