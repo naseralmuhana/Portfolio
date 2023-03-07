@@ -19,6 +19,13 @@ const Wrapper = styled("div")(({ theme }) => ({
   borderRadius: "10px",
   transition: "all 300ms ease-in-out",
 
+  ":hover": {
+    cursor: "grab",
+  },
+  ":active": {
+    cursor: "grabbing",
+  },
+
   [theme.breakpoints.down(c.b1000)]: {
     width: "150px",
     height: "150px",
