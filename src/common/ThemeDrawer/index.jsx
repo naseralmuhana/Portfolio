@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Box } from "@mui/material"
+
 import Drawer from "@mui/material/Drawer"
 import Button from "@mui/material/Button"
 import List from "@mui/material/List"
@@ -14,6 +14,7 @@ import Switch from "@mui/material/Switch"
 import { styled, useTheme } from "@mui/material/styles"
 import useThemeContext from "../../contexts/theme/useThemeContext"
 import c from "../../constants"
+import { Box } from "@mui/material"
 
 const colors = [{ label: c.blue }, { label: c.green }, { label: c.red }]
 
@@ -80,6 +81,7 @@ const ThemeDrawer = () => {
           position: "fixed",
           bottom: 0,
           right: 0,
+          backgroundColor: theme.palette.secondary.main,
         }}
       >
         <SettingsIcon />

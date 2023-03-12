@@ -4,4 +4,5 @@ export default {
   educationSectionId: "education",
   skillsSectionId: "skills",
   experienceSectionId: "experience",
+  testimonialsSectionsId: "testimonials",
 }

@@ -4,11 +4,7 @@ import c from "../../../constants"
 
 // Custom Tool tip
 const Wrapper = styled(({ className, ...props }) => (
-  <Tooltip
-    {...props}
-    classes={{ popper: className }}
-    // leaveDelay={60000}
-  />
+  <Tooltip {...props} classes={{ popper: className }} />
 ))(({ theme }) => ({
   [`& .${tooltipClasses.tooltip}`]: {
     backgroundColor: theme.palette.secondary.main,
